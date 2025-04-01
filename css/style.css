@@ -9,6 +9,11 @@
     font-weight: 500 !important;
 }
 
+.footer {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+
 .fw-semi-bold {
     font-weight: 600 !important;
 }
