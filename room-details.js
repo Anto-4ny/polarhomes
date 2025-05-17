@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       beds: "4 Beds (2 King, 2 Queen)",
       baths: "4 Full Bathrooms",
       wifi: "Complimentary Ultra-Fast Wifi",
-      images: ["img/four-bedroom.jpg", "img/room-4bed.jpg", "img/room-4bed2.jpg", "img/room-4bed0.jpg", "img/room-4bed1.jpg", "img/room-4bed4.jpg", "img/room-4bed5.jpg"]
+      images: ["img/four-bedroom.jpg", "img/room-4bed.jpg", "img/room-4bed2.jpg", "img/room-4bed0.jpg", "img/room-4bed1.jpg", "img/room-4bed4.jpg", "img/room-4bed5.jpg", "img/room-4bed6.jpg", "img/room-4bed7.jpg", "img/room-4bed8.jpg", "img/room-4bed9.jpg", "img/room-4bed10.jpg", "img/room-4bed11.jpg", "img/room-4bed12.jpg", "img/room-4bed13.jpg", "img/room-4bed14.jpg", "img/room-4bed15.jpg", "img/room-4bed16.jpg", "img/room-4bed17.jpg", "img/room-4bed18.jpg", "img/room-4bed19.jpg"]
     }
   };
 
