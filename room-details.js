@@ -75,7 +75,6 @@ Relax in a peaceful, private environment that feels like home—with hotel-style
     "img/room-studio6.jpg",
     "img/room-studio7.jpg",
     "img/room-studio8.jpg",
-    "img/room-studio9.jpg",
     "img/room-studio10.jpg",
     "img/room-studio11.jpg",
     "img/room-studio12.jpg",
