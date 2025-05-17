@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       beds: "4 Beds (2 King, 2 Queen)",
       baths: "4 Full Bathrooms",
       wifi: "Complimentary Ultra-Fast Wifi",
-      images: ["img/room-4bed.jpg", "img/room-4bed2.jpg", "img/room-4bed3.jpg"]
+      images: ["img/four-bedroom.jpg", "img/room-4bed.jpg", "img/room-4bed2.jpg", "img/room-4bed0.jpg", "img/room-4bed1.jpg", "img/room-4bed4.jpg", "img/room-4bed5.jpg"]
     }
   };
 
