@@ -19,14 +19,54 @@ document.addEventListener("DOMContentLoaded", function () {
       wifi: "Free Wifi Access",
       images: ["img/room-studio.jpg", "img/room-studio2.jpg"]
     },
-    "4bedroom": {
-      title: "4 Bedroom",
-      description: "Designed for families or groups, this spacious 4-bedroom apartment features large bedrooms, en-suite bathrooms, a fully equipped kitchen, elegant dining area, and a private terrace. Experience the comfort of home with hotel-grade services.",
-      beds: "4 Beds (2 King, 2 Queen)",
-      baths: "4 Full Bathrooms",
-      wifi: "Complimentary Ultra-Fast Wifi",
-      images: ["img/four-bedroom.jpg", "img/room-4bed.jpg", "img/room-4bed2.jpg", "img/room-4bed0.jpg", "img/room-4bed1.jpg", "img/room-4bed4.jpg", "img/room-4bed5.jpg", "img/room-4bed6.jpg", "img/room-4bed7.jpg", "img/room-4bed8.jpg", "img/room-4bed9.jpg", "img/room-4bed10.jpg", "img/room-4bed11.jpg", "img/room-4bed12.jpg", "img/room-4bed13.jpg", "img/room-4bed14.jpg", "img/room-4bed15.jpg", "img/room-4bed16.jpg", "img/room-4bed17.jpg", "img/room-4bed18.jpg", "img/room-4bed19.jpg"]
-    }
+"4bedroom": {
+  title: "4 Bedroom Executive Apartment",
+  description: `Perfect for families, long-term stays, or group getaways, this luxurious 4-bedroom apartment blends spacious living with modern elegance. Each bedroom is generously sized and includes its own full en-suite bathroom for complete privacy. The home boasts a fully equipped, spacious kitchen ideal for gourmet cooking, a stylish dining area, and a cozy lounge with plush seating and a smart TV.
+
+Enjoy the serenity of your **own private compound**, complete with a beautifully landscaped green garden, an outdoor sitting area, and a **private balcony** perfect for morning coffee or evening relaxation. The property is secured with **top-notch 24/7 security**, perimeter wall, and controlled access to ensure maximum safety and peace of mind.
+
+This suite is ideal for both work and leisure, offering **complimentary ultra-fast Wi-Fi**, ample parking space, and a peaceful environment just minutes away from the city center.`,
+  beds: "4 Beds (2 King, 2 Queen)",
+  baths: "4 En-suite Bathrooms + 1 Guest Washroom",
+  wifi: "Complimentary Ultra-Fast Wi-Fi (100 Mbps+)",
+  features: [
+    "Top-notch 24/7 security",
+    "Private compound with green garden",
+    "Balcony with a view",
+    "Spacious fully equipped kitchen",
+    "Smart TV with streaming apps",
+    "Comfortable modern seats",
+    "Private dining area",
+    "Daily housekeeping available",
+    "Secure parking space",
+    "On-demand laundry service",
+    "Workspace-friendly with power backup",
+    "Luxury towels, linens, and toiletries"
+  ],
+  images: [
+    "img/four-bedroom.jpg",
+    "img/room-4bed.jpg",
+    "img/room-4bed2.jpg",
+    "img/room-4bed0.jpg",
+    "img/room-4bed1.jpg",
+    "img/room-4bed4.jpg",
+    "img/room-4bed5.jpg",
+    "img/room-4bed6.jpg",
+    "img/room-4bed7.jpg",
+    "img/room-4bed8.jpg",
+    "img/room-4bed9.jpg",
+    "img/room-4bed10.jpg",
+    "img/room-4bed11.jpg",
+    "img/room-4bed12.jpg",
+    "img/room-4bed13.jpg",
+    "img/room-4bed14.jpg",
+    "img/room-4bed15.jpg",
+    "img/room-4bed16.jpg",
+    "img/room-4bed17.jpg",
+    "img/room-4bed18.jpg",
+    "img/room-4bed19.jpg"
+  ]
+}
   };
 
   // If invalid room or no data
