@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const roomData = {
 executive: {
   title: "Executive 1-Bedroom Suite",
-  description: `Experience top-tier living in our Executive 1-Bedroom Suite, designed for guests who value elegance, space, and modern comfort. This suite boasts a **plush king-size bed**, a **spa-inspired luxury bathroom** with a **private jacuzzi**, and floor-to-ceiling windows offering **breathtaking city or garden views**. 
+  description: `Experience top-tier living in our Executive 1-Bedroom Suite, designed for guests who value elegance, space, and modern comfort. This suite boasts a plush king-size bed, a spa-inspired luxury bathroom with a private jacuzzi, and floor-to-ceiling windows offering breathtaking city or garden views. 
 
-Ideal for business travelers or couples seeking a lavish escape, this suite also includes a **lounge area with sofa seating**, **mini-bar**, **smart lighting & climate control**, and **elegant work desk**. Every detail is curated to offer an unmatched blend of privacy, sophistication, and convenience.`,
+Ideal for business travelers or couples seeking a lavish escape, this suite also includes a lounge area with sofa seating, mini-bar, smart lighting & climate control, and elegant work desk. Every detail is curated to offer an unmatched blend of privacy, sophistication, and convenience.`,
   beds: "1 King Bed with Premium Bedding",
   baths: "1 Spa Bathroom with Jacuzzi Tub & Rain Shower",
   wifi: "High-Speed Premium Wifi + Smart TV Streaming",
@@ -47,9 +47,9 @@ Ideal for business travelers or couples seeking a lavish escape, this suite also
     
 studio: {
   title: "Deluxe Studio Apartment",
-  description: `Our deluxe studio apartments offer the perfect blend of comfort, elegance, and smart space utilization. Ideal for solo travelers, remote workers, or couples, each unit features an open-plan layout with a cozy **queen-size bed**, a stylish **modern bathroom**, a **fully equipped kitchenette**, and a **dedicated work desk** with ergonomic seating. 
+  description: `Our deluxe studio apartments offer the perfect blend of comfort, elegance, and smart space utilization. Ideal for solo travelers, remote workers, or couples, each unit features an open-plan layout with a cozy queen-size bed, a stylish modern bathroom, a fully equipped kitchenette, and a dedicated work desk with ergonomic seating. 
 
-Relax in a peaceful, private environment that feels like home—with hotel-style convenience. Enjoy **smart TV entertainment**, a compact dining area, and **ample natural light** from large windows. The space is thoughtfully designed with modern furnishings, high-quality linens, and tasteful décor. Whether you're staying for a night or a month, you'll love the comfort, security, and seamless experience.`,
+Relax in a peaceful, private environment that feels like home—with hotel-style convenience. Enjoy smart TV entertainment, a compact dining area, and ample natural light from large windows. The space is thoughtfully designed with modern furnishings, high-quality linens, and tasteful décor. Whether you're staying for a night or a month, you'll love the comfort, security, and seamless experience.`,
   beds: "1 Queen Bed with Premium Linens",
   baths: "1 Stylish Bathroom with Hot Shower",
   wifi: "Complimentary High-Speed Wifi",
@@ -83,9 +83,9 @@ Relax in a peaceful, private environment that feels like home—with hotel-style
   title: "4 Bedroom Executive Apartment",
   description: `Perfect for families, long-term stays, or group getaways, this luxurious 4-bedroom apartment blends spacious living with modern elegance. Each bedroom is generously sized and includes its own full en-suite bathroom for complete privacy. The home boasts a fully equipped, spacious kitchen ideal for gourmet cooking, a stylish dining area, and a cozy lounge with plush seating and a smart TV.
 
-Enjoy the serenity of your **own private compound**, complete with a beautifully landscaped green garden, an outdoor sitting area, and a **private balcony** perfect for morning coffee or evening relaxation. The property is secured with **top-notch 24/7 security**, perimeter wall, and controlled access to ensure maximum safety and peace of mind.
+Enjoy the serenity of your own private compound, complete with a beautifully landscaped green garden, an outdoor sitting area, and a private balcony perfect for morning coffee or evening relaxation. The property is secured with top-notch 24/7 security, perimeter wall, and controlled access to ensure maximum safety and peace of mind.
 
-This suite is ideal for both work and leisure, offering **complimentary ultra-fast Wi-Fi**, ample parking space, and a peaceful environment just minutes away from the city center.`,
+This suite is ideal for both work and leisure, offering complimentary ultra-fast Wi-Fi, ample parking space, and a peaceful environment just minutes away from the city center.`,
   beds: "4 Beds (2 King, 2 Queen)",
   baths: "4 En-suite Bathrooms + 1 Guest Washroom",
   wifi: "Complimentary Ultra-Fast Wi-Fi (100 Mbps+)",
