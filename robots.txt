@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://polarhomes.antocapteknologies.com/sitemap.xml
