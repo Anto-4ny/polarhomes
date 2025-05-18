@@ -125,9 +125,7 @@ The apartment features a full-size kitchen equipped for meal prep, a cozy living
     "img/2bedroom10.jpg",
     "img/2bedroom-lounge.jpg",
     "img/2bedroom-kitchen.jpg",
-    "img/2bedroom-master.jpg",
-    "img/2bedroom-bathroom.jpg",
-    "img/2bedroom-view.jpg"
+    "img/2bedroom-master.jpg"
   ]
 },
     
