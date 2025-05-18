@@ -89,6 +89,47 @@ Relax in a peaceful, private environment that feels like home—with hotel-style
     "img/studio-closet.jpg"
   ]
 },
+
+    "2bedroom": {
+  title: "2 Bedroom Executive Apartment",
+  description: `Enjoy an elevated stay in our 2 Bedroom Executive Apartment—ideal for small families, couples, or business travelers. This spacious unit combines the comfort of home with luxury finishes, offering two private bedrooms, each with premium bedding and ample closet space. 
+
+The apartment features a full-size kitchen equipped for meal prep, a cozy living area with a smart TV, and a private balcony for fresh air and relaxation. Perfectly suited for both short and extended stays, guests will appreciate the high-speed Wi-Fi, dedicated workspace, and secure access. Whether you're here for work, a getaway, or relocation, you'll feel right at home in this refined, fully serviced apartment.`,
+  beds: "2 Beds (1 King, 1 Queen)",
+  baths: "2 Bathrooms (1 En-suite, 1 Shared)",
+  wifi: "High-Speed Internet + Smart TV",
+  features: [
+    "Spacious lounge with premium sofas and decor",
+    "Fully equipped kitchen (fridge, cooker, microwave, utensils)",
+    "Smart TV with Netflix/YouTube support",
+    "Private balcony for relaxation",
+    "Master bedroom with en-suite bathroom",
+    "Secure entry with digital access",
+    "High-quality towels, linens, and toiletries",
+    "Dedicated workspace area",
+    "Air conditioning / fan options",
+    "Ample wardrobe and storage space",
+    "Optional daily housekeeping"
+  ],
+  images: [
+    "img/2bedroom.jpg",
+    "img/2bedroom1.jpg",
+    "img/2bedroom2.jpg",
+    "img/2bedroom3.jpg",
+    "img/2bedroom4.jpg",
+    "img/2bedroom5.jpg",
+    "img/2bedroom6.jpg",
+    "img/2bedroom7.jpg",
+    "img/2bedroom8.jpg",
+    "img/2bedroom9.jpg",
+    "img/2bedroom10.jpg",
+    "img/2bedroom-lounge.jpg",
+    "img/2bedroom-kitchen.jpg",
+    "img/2bedroom-master.jpg",
+    "img/2bedroom-bathroom.jpg",
+    "img/2bedroom-view.jpg"
+  ]
+},
     
 "4bedroom": {
   title: "4 Bedroom Executive Apartment",
