@@ -1,67 +1,91 @@
 const services = {
   "rooms": {
     title: "Rooms & Apartments",
-    description: "Luxurious rooms and spacious apartments for short or long stays.",
+    description: "Experience unmatched comfort in our spacious rooms and fully-furnished apartments. Whether you're here for a quick getaway or an extended stay, our accommodations are tailored to provide privacy, luxury, and convenience.",
     features: [
-      "Private balcony",
-      "High-speed WiFi",
-      "Fully equipped kitchenette"
+      "Private balcony with scenic views",
+      "High-speed WiFi & Smart TV",
+      "Fully equipped kitchenette with modern appliances",
+      "Room service and concierge support",
+      "Daily housekeeping and laundry options"
     ],
-    images: ["images/rooms1.jpg", "images/rooms2.jpg"]
+    images: ["images/rooms1.jpg", "images/rooms2.jpg", "images/rooms3.jpg", "images/apartment1.jpg"]
   },
   "starter-kit": {
     title: "Starter Kit",
-    description: "Enjoy welcome packages and dining essentials.",
+    description: "Start your day with our thoughtfully crafted starter kit featuring delightful local tastes and practical essentials. Ideal for travelers settling in.",
     features: [
-      "Local breakfast options",
-      "Coffee and tea maker",
-      "Daily housekeeping"
+      "Daily local breakfast options",
+      "Coffee & tea maker with welcome treats",
+      "Refrigerated mini bar",
+      "Essential toiletries and fresh towels",
+      "Daily housekeeping service"
     ],
-    images: ["images/starter1.jpg", "images/starter2.jpg"]
+    images: ["images/starter1.jpg", "images/starter2.jpg", "images/starter3.jpg", "images/starter4.jpg"]
   },
   "spa-fitness": {
     title: "Spa & Fitness",
-    description: "Rejuvenate with spa treatments and a state-of-the-art fitness center.",
+    description: "Rejuvenate your body and mind at our spa and fitness zone. Unwind with tranquil therapies or energize in our modern gym facilities.",
     features: [
-      "Massage therapy",
-      "Sauna and steam rooms",
-      "Modern gym equipment"
+      "Professional massage therapy & body scrubs",
+      "Sauna, steam room & Jacuzzi",
+      "Modern gym with cardio and weights",
+      "Certified fitness trainers",
+      "Relaxation lounge and detox drinks"
     ],
-    images: ["images/spa1.jpg", "images/fitness1.jpg"]
+    images: ["images/spa1.jpg", "images/fitness1.jpg", "images/spa2.jpg", "images/gym2.jpg"]
   },
   "sports-gaming": {
     title: "Sports & Gaming",
-    description: "Thrilling sports and gaming facilities for all ages.",
+    description: "Stay active and entertained with our diverse range of indoor and outdoor recreational activities. Perfect for all age groups.",
     features: [
-      "Indoor games",
-      "Swimming pool",
-      "Sports courts"
+      "Billiards, darts & board games lounge",
+      "Olympic-size swimming pool",
+      "Basketball and tennis courts",
+      "Mini soccer turf",
+      "Children’s play area & video game arcade"
     ],
-    images: ["images/sports1.jpg", "images/gaming1.jpg"]
+    images: ["images/sports1.jpg", "images/gaming1.jpg", "images/swimming1.jpg", "images/court1.jpg"]
   },
   "event-party": {
     title: "Event & Party",
-    description: "Celebrate with style in our modern event and party venues.",
+    description: "Celebrate milestones or host corporate events in style. Our venues blend elegance and flexibility, perfect for both grand and intimate gatherings.",
     features: [
-      "Banquet halls",
-      "Event planning",
-      "Catering services"
+      "Elegant banquet halls & outdoor garden spaces",
+      "Event planning support & decor setup",
+      "DJ booth and lighting systems",
+      "Professional catering services",
+      "Private lounges and VIP suites"
     ],
-    images: ["images/event1.jpg", "images/party1.jpg"]
+    images: ["images/event1.jpg", "images/party1.jpg", "images/event2.jpg", "images/party2.jpg"]
   },
   "gym-yoga": {
     title: "Gym & Yoga",
-    description: "Stay healthy and centered with our gym and yoga sessions.",
+    description: "Find balance and build strength with our dynamic fitness and mindfulness routines. Our serene wellness space supports your full-body journey.",
     features: [
-      "Yoga mats provided",
-      "Personal trainers",
-      "Peaceful workout environment"
+      "Dedicated yoga studio with mats and props",
+      "Guided meditation and yoga classes",
+      "Full gym access with personal trainer sessions",
+      "Hydration station with herbal teas",
+      "Peaceful environment for wellness seekers"
     ],
-    images: ["images/gym1.jpg", "images/yoga1.jpg"]
+    images: ["images/gym1.jpg", "images/yoga1.jpg", "images/yoga2.jpg", "images/fitness2.jpg"]
   }
 };
 
-// URL query handler
+// Universal Nairobi attractions
+const attractionsHTML = `
+  <h4 class="mb-3 text-uppercase text-primary"><i class="fa fa-map-marker-alt me-2"></i>Nearby Attractions</h4>
+  <div class="row g-3">
+    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Nairobi National Park</div>
+    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Giraffe Centre</div>
+    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>David Sheldrick Elephant Orphanage</div>
+    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Karen Blixen Museum</div>
+    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Bomas of Kenya</div>
+    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Maasai Market</div>
+  </div>
+`;
+
 const urlParams = new URLSearchParams(window.location.search);
 const serviceKey = urlParams.get('service');
 const service = services[serviceKey];
@@ -86,15 +110,7 @@ if (service) {
     carouselInner.appendChild(div);
   });
 
-  document.getElementById('kenya-attractions').innerHTML = `
-    <h4 class="mb-3 text-uppercase text-primary"><i class="fa fa-map-marker-alt me-2"></i>Nearby Attractions</h4>
-    <div class="row g-3">
-      <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Maasai Mara National Reserve</div>
-      <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Diani Beach</div>
-      <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Mount Kenya</div>
-      <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Lake Nakuru</div>
-    </div>
-  `;
+  document.getElementById('kenya-attractions').innerHTML = attractionsHTML;
 
   document.getElementById('about-polarhomes').innerHTML = `
     <h4 class="text-primary mb-3">Why Choose PolarHomes?</h4>
