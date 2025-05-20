@@ -226,16 +226,62 @@
 <!-- Booking End -->
 
 <body>
-  <div class="container">
-    <h1 id="service-title"></h1>
-    <div id="carousel-images"></div>
-    <p id="service-description"></p>
-    <ul id="service-features"></ul>
-    <div id="kenya-attractions"></div>
-    <div id="about-polarhomes"></div>
+  <div class="container py-5">
+    <!-- Service Title -->
+    <div class="text-center mb-5">
+      <h1 id="service-title" class="display-5 fw-bold text-primary"></h1>
+    </div>
+
+    <!-- Carousel Images -->
+    <div id="carousel-images" class="mb-5">
+      <!-- Bootstrap Carousel goes here from JS -->
+    </div>
+
+    <!-- Booking Button -->
+    <div class="text-center mb-4">
+      <a href="#booking" class="btn btn-primary btn-lg px-5">
+        <i class="fa fa-calendar-check me-2"></i> Book Now
+      </a>
+    </div>
+
+    <!-- Service Description -->
+    <div class="mb-5">
+      <h3 class="text-secondary"><i class="fa fa-info-circle me-2"></i> About This Service</h3>
+      <p id="service-description" class="lead"></p>
+    </div>
+
+    <!-- Service Features -->
+    <div class="mb-5">
+      <h4 class="text-secondary"><i class="fa fa-check-circle me-2"></i> Features</h4>
+      <ul id="service-features" class="list-group list-group-flush">
+        <!-- JS populates this -->
+      </ul>
+    </div>
+
+    <!-- Kenya Attractions -->
+    <div class="mb-5">
+      <h4 class="text-secondary"><i class="fa fa-map-marked-alt me-2"></i> Attractions Around Kenya</h4>
+      <div id="kenya-attractions" class="row g-4">
+        <!-- JS adds image cards or text -->
+      </div>
+    </div>
+
+    <!-- About PolarHomes -->
+    <div id="about-polarhomes" class="bg-light rounded p-4">
+      <h4 class="text-secondary mb-3"><i class="fa fa-home me-2"></i> Why Choose PolarHomes?</h4>
+      <ul class="list-unstyled">
+        <li><i class="fa fa-check text-primary me-2"></i> Conveniently located near the Nairobi Expressway</li>
+        <li><i class="fa fa-check text-primary me-2"></i> Just minutes from the SGR Station and JKIA Airport</li>
+        <li><i class="fa fa-check text-primary me-2"></i> Close to major shopping malls and restaurants</li>
+        <li><i class="fa fa-check text-primary me-2"></i> Located in the heart of Kenya's capital city</li>
+        <li><i class="fa fa-check text-primary me-2"></i> Offers access to vibrant city life and tourist destinations</li>
+      </ul>
+    </div>
   </div>
 
   <script src="service-detail.js"></script>
+
+
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light footer wow fadeIn pt-4 pb-2 mt-5" data-wow-delay="0.1s">
     <div class="container">
