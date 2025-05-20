@@ -75,14 +75,58 @@ const services = {
 
 // Universal Nairobi attractions
 const attractionsHTML = `
-  <h4 class="mb-3 text-uppercase text-primary"><i class="fa fa-map-marker-alt me-2"></i>Nearby Attractions</h4>
-  <div class="row g-3">
-    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Nairobi National Park</div>
-    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Giraffe Centre</div>
-    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>David Sheldrick Elephant Orphanage</div>
-    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Karen Blixen Museum</div>
-    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Bomas of Kenya</div>
-    <div class="col-md-6"><i class="fa fa-check text-success me-2"></i>Maasai Market</div>
+  <h4 class="mb-4 text-uppercase text-primary">
+    <i class="fa fa-map-marker-alt me-2"></i>Nearby Attractions
+  </h4>
+
+  <div class="row gy-5">
+    <div class="col-12 d-md-flex align-items-start">
+      <img src="images/attractions/nairobi-park.jpg" class="img-fluid rounded me-md-4 mb-3 mb-md-0" style="width: 280px; max-height: 180px; object-fit: cover;" alt="Nairobi National Park">
+      <div>
+        <h5 class="text-secondary">Nairobi National Park</h5>
+        <p>Just minutes from the city center, this unique national park lets you witness lions, rhinos, and giraffes roaming freely with a backdrop of Nairobi's skyline.</p>
+      </div>
+    </div>
+
+    <div class="col-12 d-md-flex align-items-start flex-md-row-reverse">
+      <img src="images/attractions/giraffe-centre.jpg" class="img-fluid rounded ms-md-4 mb-3 mb-md-0" style="width: 280px; max-height: 180px; object-fit: cover;" alt="Giraffe Centre">
+      <div>
+        <h5 class="text-secondary">Giraffe Centre</h5>
+        <p>Interact with endangered Rothschild giraffes at eye-level from an elevated platform in this conservation and education center loved by families and tourists alike.</p>
+      </div>
+    </div>
+
+    <div class="col-12 d-md-flex align-items-start">
+      <img src="images/attractions/david-sheldrick.jpg" class="img-fluid rounded me-md-4 mb-3 mb-md-0" style="width: 280px; max-height: 180px; object-fit: cover;" alt="David Sheldrick Elephant Orphanage">
+      <div>
+        <h5 class="text-secondary">David Sheldrick Elephant Orphanage</h5>
+        <p>A heartwarming sanctuary rescuing baby elephants and rhinos. Watch feeding time and learn about elephant conservation efforts.</p>
+      </div>
+    </div>
+
+    <div class="col-12 d-md-flex align-items-start flex-md-row-reverse">
+      <img src="images/attractions/karen-blixen.jpg" class="img-fluid rounded ms-md-4 mb-3 mb-md-0" style="width: 280px; max-height: 180px; object-fit: cover;" alt="Karen Blixen Museum">
+      <div>
+        <h5 class="text-secondary">Karen Blixen Museum</h5>
+        <p>Once home to the author of *Out of Africa*, this colonial-era farmhouse offers a glimpse into Kenya’s colonial past and the author’s fascinating life.</p>
+      </div>
+    </div>
+
+    <div class="col-12 d-md-flex align-items-start">
+      <img src="images/attractions/bomas.jpg" class="img-fluid rounded me-md-4 mb-3 mb-md-0" style="width: 280px; max-height: 180px; object-fit: cover;" alt="Bomas of Kenya">
+      <div>
+        <h5 class="text-secondary">Bomas of Kenya</h5>
+        <p>A cultural center showcasing traditional Kenyan villages, live music, and dazzling dance performances representing the country's rich heritage.</p>
+      </div>
+    </div>
+
+    <div class="col-12 d-md-flex align-items-start flex-md-row-reverse">
+      <img src="images/attractions/maasai-market.jpg" class="img-fluid rounded ms-md-4 mb-3 mb-md-0" style="width: 280px; max-height: 180px; object-fit: cover;" alt="Maasai Market">
+      <div>
+        <h5 class="text-secondary">Maasai Market</h5>
+        <p>A vibrant open-air market featuring handmade jewelry, beaded art, carvings, fabrics, and souvenirs — perfect for gifts and keepsakes.</p>
+      </div>
+    </div>
   </div>
 `;
 
