@@ -541,6 +541,7 @@
 <!-- Video Start -->
 <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
     <div class="row g-0">
+        <!-- Text Column -->
         <div class="col-md-6 bg-dark d-flex align-items-center">
             <div class="p-5">
                 <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
@@ -550,9 +551,11 @@
                 <a href="booking" class="btn btn-light py-md-3 px-md-5">Book Your Stay</a>
             </div>
         </div>
+
+        <!-- Video Background Column -->
         <div class="col-md-6">
-            <div class="video">
-                <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/" data-bs-target="#videoModal">
+            <div class="video" style="background-image: url('images/luxury-room.jpg'); background-size: cover; background-position: center; height: 100%; min-height: 400px; position: relative;">
+                <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
                     <span></span>
                 </button>
             </div>
@@ -562,22 +565,33 @@
 
 <!-- Video Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content rounded-0">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Explore Our Luxurious Hotel</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="pauseVideo()"></button>
             </div>
             <div class="modal-body">
-                <!-- 16:9 aspect ratio -->
-                <div class="ratio ratio-16x9">
-                    <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
-                </div>
+                <video id="customVideo" controls autoplay style="width: 100%; border-radius: 8px;">
+                    <source src="videos/hotel-tour.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
 </div>
-<!-- Video End -->
+
+<!-- Pause Video Script -->
+<script>
+    function pauseVideo() {
+        const video = document.getElementById("customVideo");
+        if (video) video.pause();
+    }
+
+    const modal = document.getElementById('videoModal');
+    modal.addEventListener('hidden.bs.modal', pauseVideo);
+</script>
+
 
 
       <!-- Service Start -->
