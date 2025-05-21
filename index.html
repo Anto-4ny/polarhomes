@@ -546,7 +546,9 @@
             <div class="p-5">
                 <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
                 <h1 class="text-white mb-4">Discover The Epitome of Luxurious Stay</h1>
-                <p class="text-white mb-4">Experience unparalleled comfort and elegance with our exclusive range of rooms. From cozy getaways to extravagant suites, we offer the perfect accommodation to suit your needs. Indulge in luxury, serenity, and world-class service like never before.</p>
+                <p class="text-white mb-4">
+                    Experience unparalleled comfort and elegance with our exclusive range of rooms. From cozy getaways to extravagant suites, we offer the perfect accommodation to suit your needs. Indulge in luxury, serenity, and world-class service like never before.
+                </p>
                 <a href="room" class="btn btn-primary py-md-3 px-md-5 me-3">Explore Our Rooms</a>
                 <a href="booking" class="btn btn-light py-md-3 px-md-5">Book Your Stay</a>
             </div>
@@ -554,7 +556,7 @@
 
         <!-- Video Background Column -->
         <div class="col-md-6">
-            <div class="video" style="background-image: url('img/luxury-room.jpg'); background-size: cover; background-position: center; height: 100%; min-height: 400px; position: relative;">
+            <div class="video d-flex justify-content-center align-items-center" style="background-image: url('img/luxury-room.jpg'); background-size: cover; background-position: center; height: 100%; min-height: 400px; position: relative;">
                 <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
                     <span></span>
                 </button>
@@ -565,14 +567,14 @@
 
 <!-- Video Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
         <div class="modal-content rounded-0">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Explore Our Luxurious Hotel</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="pauseVideo()"></button>
             </div>
-            <div class="modal-body">
-                <video id="customVideo" controls autoplay style="width: 100%; border-radius: 8px;">
+            <div class="modal-body p-0">
+                <video id="customVideo" controls autoplay style="width: 100%; height: auto; border-radius: 0;">
                     <source src="img/hotel-tour.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -589,10 +591,10 @@
     }
 
     const modal = document.getElementById('videoModal');
-    modal.addEventListener('hidden.bs.modal', pauseVideo);
+    if (modal) {
+        modal.addEventListener('hidden.bs.modal', pauseVideo);
+    }
 </script>
-
-
 
       <!-- Service Start -->
 <div class="container-xxl py-5">
