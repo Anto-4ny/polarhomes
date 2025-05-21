@@ -9,7 +9,7 @@ const services = {
       "Room service and concierge support",
       "Daily housekeeping and laundry options"
     ],
-    images: ["images/rooms1.jpg", "images/rooms2.jpg", "images/rooms3.jpg", "images/apartment1.jpg"]
+    images: ["img/rooms1.jpg", "img/rooms2.jpg", "img/rooms3.jpg", "img/apartment1.jpg"]
   },
   "starter-kit": {
     title: "Starter Kit",
@@ -21,7 +21,7 @@ const services = {
       "Essential toiletries and fresh towels",
       "Daily housekeeping service"
     ],
-    images: ["images/starter1.jpg", "images/starter2.jpg", "images/starter3.jpg", "images/starter4.jpg"]
+    images: ["img/starter1.jpg", "img/starter2.jpg", "img/starter3.jpg"]
   },
   "spa-fitness": {
     title: "Spa & Fitness",
@@ -33,7 +33,7 @@ const services = {
       "Certified fitness trainers",
       "Relaxation lounge and detox drinks"
     ],
-    images: ["images/spa1.jpg", "images/fitness1.jpg", "images/spa2.jpg", "images/gym2.jpg"]
+    images: ["img/gaming1.jpg", "img/yoga1.jpg"]
   },
   "sports-gaming": {
     title: "Sports & Gaming",
@@ -45,7 +45,7 @@ const services = {
       "Mini soccer turf",
       "Children’s play area & video game arcade"
     ],
-    images: ["images/sports1.jpg", "images/gaming1.jpg", "images/swimming1.jpg", "images/court1.jpg"]
+    images: ["img/sports1.jpg", "img/gaming1.jpg", "img/swimming1.jpg", "img/court1.jpg"]
   },
   "event-party": {
     title: "Event & Party",
@@ -57,7 +57,7 @@ const services = {
       "Professional catering services",
       "Private lounges and VIP suites"
     ],
-    images: ["images/event1.jpg", "images/party1.jpg", "images/event2.jpg", "images/party2.jpg"]
+    images: ["img/event1.jpg", "img/party1.jpg", "img/event2.jpg", "img/party2.jpg"]
   },
   "gym-yoga": {
     title: "Gym & Yoga",
@@ -69,7 +69,7 @@ const services = {
       "Hydration station with herbal teas",
       "Peaceful environment for wellness seekers"
     ],
-    images: ["images/gym1.jpg", "images/yoga1.jpg", "images/yoga2.jpg", "images/fitness2.jpg"]
+    images: ["img/gaming1.jpg", "img/yoga1.jpg"]
   }
 };
 
