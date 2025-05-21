@@ -9,7 +9,7 @@ const services = {
       "Room service and concierge support",
       "Daily housekeeping and laundry options"
     ],
-    images: ["img/rooms1.jpg", "img/rooms2.jpg", "img/rooms3.jpg", "img/apartment1.jpg"]
+    images: ["img/studio.jpg", "img/one-bedroom.jpg", "img/two-bedroom.jpg", "img/fourr-bedroom.jpg"]
   },
   "starter-kit": {
     title: "Starter Kit",
