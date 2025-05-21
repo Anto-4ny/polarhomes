@@ -556,25 +556,8 @@
 
         <!-- Video Background Column -->
         <div class="col-md-6">
-            <div class="video d-flex justify-content-center align-items-center" style="background-image: url('img/luxury-room.jpg'); background-size: cover; background-position: center; height: 100%; min-height: 400px; position: relative;">
-                <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Video Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
-        <div class="modal-content rounded-0">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Explore Our Luxurious Hotel</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="pauseVideo()"></button>
-            </div>
-            <div class="modal-body p-0">
-                <video id="customVideo" controls autoplay style="width: 100%; height: auto; border-radius: 0;">
+            <div class="video d-flex justify-content-center align-items-center overflow-hidden" style="height: 100%; min-height: 400px;">
+                <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
                     <source src="img/hotel-tour.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -582,19 +565,6 @@
         </div>
     </div>
 </div>
-
-<!-- Pause Video Script -->
-<script>
-    function pauseVideo() {
-        const video = document.getElementById("customVideo");
-        if (video) video.pause();
-    }
-
-    const modal = document.getElementById('videoModal');
-    if (modal) {
-        modal.addEventListener('hidden.bs.modal', pauseVideo);
-    }
-</script>
 
       <!-- Service Start -->
 <div class="container-xxl py-5">
