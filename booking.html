@@ -299,79 +299,107 @@
                             </div>
                         </div>
                     </div>
+
+                    
                     <div class="col-lg-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                           <form action="https://formspree.io/f/xkgryeaa" method="POST">
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
-                <label for="name">Your Name</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email">
-                <label for="email">Your Email</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating date">
-                <input type="text" class="form-control datetimepicker-input" id="checkin" name="checkin" placeholder="Check In">
-                <label for="checkin">Check In</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating date">
-                <input type="text" class="form-control datetimepicker-input" id="checkout" name="checkout" placeholder="Check Out">
-                <label for="checkout">Check Out</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <select class="form-select" id="select1" name="adults">
-                    <option value="1">1 Person</option>
-                    <option value="2">2 People</option>
-                </select>
-                <label for="select1">Select Adult</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <select class="form-select" id="select2" name="children">
-                    <option value="1">1 Child</option>
-                </select>
-                <label for="select2">Select Child</label>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="form-floating">
-                <select class="form-select" id="select3" name="room_type">
-                    <option value="Studio Executive suite">Studio Executive suite</option>
-                    <option value="One Bedroom suite">One Bedroom suite</option>
-                    <option value="Two Bedroom suite">Two Bedroom suite</option>
-                    <option value="4 Bedroom suite">4 Bedroom Villa/Stand Alone</option>
-                </select>
-                <label for="select3">Select A Room</label>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Special Request" id="message" name="message" style="height: 100px"></textarea>
-                <label for="message">Special Request</label>
-            </div>
-        </div>
-        <div class="col-12">
-            <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
-        </div>
-    </div>
-</form>
-     </div>
-         </div>
+    <div class="wow fadeInUp" data-wow-delay="0.2s">
+        <form action="https://formspree.io/f/xkgryeaa" method="POST">
+            <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+
+                <!-- Check In -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="datetime-local" class="form-control" id="checkin" name="checkin" placeholder="Check In" required>
+                        <label for="checkin">Check In</label>
+                    </div>
+                </div>
+
+                <!-- Check Out -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="datetime-local" class="form-control" id="checkout" name="checkout" placeholder="Check Out" required>
+                        <label for="checkout">Check Out</label>
+                    </div>
+                </div>
+
+                <!-- Adults -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="select1" name="adults" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                        </select>
+                        <label for="select1">Select Adult</label>
+                    </div>
+                </div>
+
+                <!-- Children -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="select2" name="children">
+                            <option value="" disabled selected>Select</option>
+                            <option value="0">No Child</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                        </select>
+                        <label for="select2">Select Child</label>
+                    </div>
+                </div>
+
+                <!-- Room Type -->
+                <div class="col-12">
+                    <div class="form-floating">
+                        <select class="form-select" id="select3" name="room_type" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="Studio Executive suite">Studio Executive suite</option>
+                            <option value="One Bedroom suite">One Bedroom suite</option>
+                            <option value="Two Bedroom suite">Two Bedroom suite</option>
+                            <option value="4 Bedroom suite">4 Bedroom Villa/Stand Alone</option>
+                        </select>
+                        <label for="select3">Select A Room</label>
+                    </div>
+                </div>
+
+                <!-- Special Request -->
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Special Request" id="message" name="message" style="height: 100px"></textarea>
+                        <label for="message">Special Request</label>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
                 </div>
             </div>
-        </div>
-        <!-- Booking End -->
+        </form>
+    </div>
+</div>
 
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light footer wow fadeIn pt-4 pb-2 mt-5" data-wow-delay="0.1s">
