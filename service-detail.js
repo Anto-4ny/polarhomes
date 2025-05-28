@@ -158,11 +158,11 @@ if (service) {
 
   document.getElementById('about-polarhomes').innerHTML = `
     <h4 class="text-primary mb-3">Why Choose PolarHomes?</h4>
-    <p>Located in the capital city of Nairobi, PolarHomes is strategically situated near major shopping centers, the SGR station, JKIA airport, and the expressway. Whether you're visiting for business or pleasure, PolarHomes provides luxury, accessibility, and unforgettable experiences under one roof.</p>
+    <p>Located in the capital city of Nairobi, PolarHomes is strategically situated near major shopping centers, the SGR station, Jomo Kenyatta International Airport, and the Nairobi expressway. Whether you're visiting for business or pleasure, PolarHomes provides luxury, accessibility, and unforgettable experiences under one roof.</p>
     <ul class="list-unstyled">
-      <li><i class="fa fa-map-marker-alt text-primary me-2"></i>Near Expressway</li>
+      <li><i class="fa fa-map-marker-alt text-primary me-2"></i>Near Nairobi Expressway</li>
       <li><i class="fa fa-train text-primary me-2"></i>Close to SGR station</li>
-      <li><i class="fa fa-plane text-primary me-2"></i>10 mins from JKIA Airport</li>
+      <li><i class="fa fa-plane text-primary me-2"></i>10 mins from Jomo Kenyatta International Airport</li>
       <li><i class="fa fa-shopping-cart text-primary me-2"></i>Minutes from major malls</li>
       <li><i class="fa fa-city text-primary me-2"></i>In the heart of Nairobi</li>
     </ul>
