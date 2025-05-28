@@ -227,53 +227,83 @@
         <!-- Page Header End -->
 
 
-<!-- Booking Start 
+<!-- Booking Start -->
 <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
         <form action="https://formspree.io/f/xkgryeaa" method="POST">
             <div class="bg-white shadow" style="padding: 35px;">
                 <div class="row g-2">
+                    <!-- Date, Guests -->
                     <div class="col-md-10">
                         <div class="row g-2">
+                            <!-- Check In -->
                             <div class="col-md-3">
                                 <div class="date" id="date1" data-target-input="nearest">
                                     <input type="text" class="form-control datetimepicker-input"
                                         name="checkin"
-                                        placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                        placeholder="Check In" data-target="#date1" data-toggle="datetimepicker" required />
                                 </div>
                             </div>
+                            <!-- Check Out -->
                             <div class="col-md-3">
                                 <div class="date" id="date2" data-target-input="nearest">
                                     <input type="text" class="form-control datetimepicker-input"
                                         name="checkout"
-                                        placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                        placeholder="Check Out" data-target="#date2" data-toggle="datetimepicker" required />
                                 </div>
                             </div>
+                            <!-- Adults -->
                             <div class="col-md-3">
-                                <select class="form-select" name="adults">
+                                <select class="form-select" name="adults" required>
                                     <option selected disabled>Adult</option>
                                     <option value="1">1 Person</option>
                                     <option value="2">2 People</option>
                                 </select>
                             </div>
+                            <!-- Children -->
                             <div class="col-md-3">
                                 <select class="form-select" name="children">
                                     <option selected disabled>Child</option>
+                                    <option value="0">No Child</option>
                                     <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
                                 </select>
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required />
+                            </div>
+                            <!-- Phone -->
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required />
+                            </div>
+                            <!-- Room Type -->
+                            <div class="col-md-6">
+                                <select class="form-select" name="room_type" required>
+                                    <option selected disabled>Select Room</option>
+                                    <option value="Studio Executive suite">Studio Executive suite</option>
+                                    <option value="One Bedroom suite">One Bedroom suite</option>
+                                    <option value="Two Bedroom suite">Two Bedroom suite</option>
+                                    <option value="4 Bedroom suite">4 Bedroom Villa/Stand Alone</option>
+                                </select>
+                            </div>
+                            <!-- Special Request -->
+                            <div class="col-md-6">
+                                <textarea class="form-control" name="message" placeholder="Special Request" rows="2"></textarea>
                             </div>
                         </div>
                     </div>
+                    <!-- Submit Button -->
                     <div class="col-md-2">
-                        <button class="btn btn-primary w-100" type="submit">Submit</button>
+                        <button class="btn btn-primary w-100 h-100" type="submit">Book Now</button>
                     </div>
                 </div>
             </div>
         </form>
     </div>
 </div>
- Booking End -->
 
+ <!--Booking End -->
 
         <!-- Booking Start -->
         <div class="container-xxl py-5">
