@@ -85,10 +85,11 @@
 .navbar-dark .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: black;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
+    background-color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -494,3 +495,4 @@
     padding-right: 0;
     border-right: none;
 }
+
