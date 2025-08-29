@@ -9,12 +9,6 @@
     font-weight: 500 !important;
 }
 
-.footer {
-    margin-top: 50px; /* Adjust as needed */
-
-}
-
-
 .fw-semi-bold {
     font-weight: 600 !important;
 }
@@ -84,6 +78,11 @@
 
 /*** Navbar ***/
 /* Gold color variable */
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
 :root {
   --gold: #d4af37;
   --black: #000;
@@ -455,36 +454,12 @@
 }
 
 
-/*** Team ***/
-.team-item,
-.team-item .bg-primary,
-.team-item .bg-primary i {
-    transition: .5s;
-}
-
-.team-item:hover {
-    border-color: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary {
-    background: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary i {
-    color: var(--secondary) !important;
-}
-
-
 /*** Footer ***/
-.newsletter {
-    position: relative;
-    z-index: 1;
-}
-
 .footer {
     position: relative;
     margin-top: -110px;
     padding-top: 180px;
+    margin-top: 50px;
 }
 
 .footer .btn.btn-social {
