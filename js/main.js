@@ -14,7 +14,7 @@
     
     // Initiate the wowjs
     new WOW().init();
-    
+
     
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");

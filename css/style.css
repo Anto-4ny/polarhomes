@@ -11,6 +11,7 @@
 
 .footer {
     margin-top: 50px; /* Adjust as needed */
+
 }
 
 
@@ -82,26 +83,80 @@
 
 
 /*** Navbar ***/
-.navbar-dark .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 25px 0;
-    color: black;
-    font-size: 15px;
-    text-transform: uppercase;
-    outline: none;
-    background-color: white;
+/* Gold color variable */
+:root {
+  --gold: #d4af37;
+  --black: #000;
+  --white: #fff;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: var(--primary);
+/* Logo */
+.logo-img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
 }
 
+/* Fancy Brand Text */
+.fancy-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Cinzel", serif;
+  text-shadow: 2px 2px 8px rgba(212, 175, 55, 0.6);
+}
+
+/* Navbar Links */
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 20px;
+  padding: 10px 0;
+  color: var(--black);
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--gold);
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gold);
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Contact Bar */
+.bg-black .fa,
+.bg-black a {
+  color: var(--white);
+}
+.bg-black .fa.text-gold {
+  color: var(--gold);
+}
+
+/* Responsive Adjustments */
 @media (max-width: 991.98px) {
-    .navbar-dark .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-    }
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+    margin-left: 10px;
+  }
+  .fancy-text {
+    font-size: 1.4rem;
+  }
 }
 
 
@@ -122,8 +177,8 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 @media (max-width: 768px) {
