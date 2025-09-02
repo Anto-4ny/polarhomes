@@ -1,0 +1,49 @@
+{
+  "name": "polarhomes",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "js/main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "optimize-images": "imagemin img/*.{jpg,jpeg,png,webp,svg} --plugin=webp --out-dir=dist/images",
+    "analyze": "vite build --mode analyze",
+    "test:seo": "lighthouse http://localhost:4173 --only-categories=performance,seo,best-practices,accessibility --view"
+  },
+  "keywords": ["seo", "bootstrap", "vite", "polarhomes", "html", "css", "javascript"],
+  "author": "",
+  "license": "ISC",
+  "description": "Fast SEO-optimized bootstrap project",
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^7.2.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.1",
+    "imagemin": "^9.0.1",
+    "imagemin-cli": "^8.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webp": "^8.0.0",
+    "postcss": "^8.5.6",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "terser": "^5.43.1",
+    "vite": "^7.1.4",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-html-minifier-terser": "^3.8.0",
+    "vite-plugin-pwa": "^0.20.5",
+    "vite-plugin-critical": "^0.7.3"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "counterup2": "^2.0.2",
+    "owl.carousel": "^2.3.4",
+    "tempusdominus-bootstrap-4": "^5.39.2",
+    "waypoints": "^4.0.1",
+    "wowjs": "^1.1.3"
+  }
+}
