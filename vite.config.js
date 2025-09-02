@@ -32,13 +32,28 @@ export default defineConfig({
       minifyCSS: true,
     }),
   ],
+
+  css: {
+    transformer: 'postcss', // force PostCSS
+  },
+
+  define: {
+    'window.jQuery': 'jQuery',
+    'window.$': '$'
+  },
+
+  optimizeDeps: {
+    include: ['jquery']
+  },
+
   build: {
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true, // remove console logs
+        drop_console: true, 
         drop_debugger: true,
       },
     },
   },
 })
+

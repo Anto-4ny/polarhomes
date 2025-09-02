@@ -46,6 +46,7 @@
     "vite-plugin-pwa": "^1.0.3"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "compression": "^1.8.1",
     "counterup2": "^2.0.2",
     "jquery": "^3.7.1",
