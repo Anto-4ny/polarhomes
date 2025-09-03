@@ -2,6 +2,17 @@ import { defineConfig } from 'vite'
 import legacy from '@vitejs/plugin-legacy'
 import viteCompression from 'vite-plugin-compression'
 import htmlMinifier from 'vite-plugin-html-minifier-terser'
+import { resolve } from 'path'
+import fs from 'fs'
+
+// Automatically detect all .html files in project root
+const htmlFiles = fs.readdirSync(__dirname)
+  .filter(file => file.endsWith('.html'))
+  .reduce((entries, file) => {
+    const name = file.replace('.html', '')
+    entries[name] = resolve(__dirname, file)
+    return entries
+  }, {})
 
 export default defineConfig({
   plugins: [
@@ -9,13 +20,13 @@ export default defineConfig({
       targets: ['defaults', 'not IE 11'],
     }),
     viteCompression({
-      algorithm: 'brotliCompress', // Brotli compression
+      algorithm: 'brotliCompress',
       ext: '.br',
-      threshold: 1024, // Only compress files > 1KB
+      threshold: 1024,
       deleteOriginFile: false,
     }),
     viteCompression({
-      algorithm: 'gzip', // Gzip fallback
+      algorithm: 'gzip',
       ext: '.gz',
       threshold: 1024,
       deleteOriginFile: false,
@@ -34,7 +45,7 @@ export default defineConfig({
   ],
 
   css: {
-    transformer: 'postcss', // force PostCSS
+    transformer: 'postcss',
   },
 
   define: {
@@ -47,10 +58,13 @@ export default defineConfig({
   },
 
   build: {
+    rollupOptions: {
+      input: htmlFiles, // 👈 All HTMLs included here
+    },
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true, 
+        drop_console: true,
         drop_debugger: true,
       },
     },
