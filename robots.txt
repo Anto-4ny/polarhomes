@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://polarhomes.org/sitemap.xml
