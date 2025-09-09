@@ -112,7 +112,7 @@
 <header>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 px-lg-5 sticky-navbar">
-  <a href="index" class="navbar-brand d-flex align-items-center">
+  <a href="/" class="navbar-brand d-flex align-items-center">
     <img src="img/logo.jpg" alt="Polarhomes Luxury Homes Logo" class="logo-img me-2" />
     <h1 class="m-0 fancy-text">Polarhomes</h1>
   </a>
@@ -125,7 +125,7 @@
   <!-- Navbar Links -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
     <ul class="navbar-nav ms-auto text-uppercase fw-semibold">
-      <li class="nav-item"><a href="index" class="nav-link active">Home</a></li>
+      <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
       <li class="nav-item"><a href="about" class="nav-link">About Us</a></li>
       <li class="nav-item"><a href="service" class="nav-link">Our Services</a></li>
       <li class="nav-item"><a href="room" class="nav-link">Our Rooms</a></li>
@@ -213,7 +213,7 @@
     }
 </style>
 
- <!-- Booking Start -->
+    <!-- Booking Start -->
 <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
         <form action="https://formspree.io/f/xkgryeaa" method="POST">
@@ -238,38 +238,41 @@
                                         placeholder="Check Out" data-target="#date2" data-toggle="datetimepicker" required />
                                 </div>
                             </div>
-<!-- Adults -->
-<div class="col-md-3">
-    <label for="adults" class="visually-hidden">Number of Adults</label>
-    <select id="adults" class="form-select" name="adults" required>
-        <option selected disabled>Adult</option>
-        <option value="1">1 Person</option>
-        <option value="2">2 People</option>
-    </select>
-</div>
-
-<!-- Children -->
-<div class="col-md-3">
-    <label for="children" class="visually-hidden">Number of Children</label>
-    <select id="children" class="form-select" name="children">
-        <option selected disabled>Child</option>
-        <option value="0">No Child</option>
-        <option value="1">1 Child</option>
-        <option value="2">2 Children</option>
-    </select>
-</div>
-
-<!-- Room Type -->
-<div class="col-md-6">
-    <label for="room_type" class="visually-hidden">Room Type</label>
-    <select id="room_type" class="form-select" name="room_type" required>
-        <option selected disabled>Select Room</option>
-        <option value="Studio Executive suite">Studio Executive suite</option>
-        <option value="One Bedroom suite">One Bedroom suite</option>
-        <option value="Two Bedroom suite">Two Bedroom suite</option>
-        <option value="4 Bedroom suite">4 Bedroom Villa/Stand Alone</option>
-    </select>
-</div>
+                            <!-- Adults -->
+                            <div class="col-md-3">
+                                <select class="form-select" name="adults" required>
+                                    <option selected disabled>Adult</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                </select>
+                            </div>
+                            <!-- Children -->
+                            <div class="col-md-3">
+                                <select class="form-select" name="children">
+                                    <option selected disabled>Child</option>
+                                    <option value="0">No Child</option>
+                                    <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
+                                </select>
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required />
+                            </div>
+                            <!-- Phone -->
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required />
+                            </div>
+                            <!-- Room Type -->
+                            <div class="col-md-6">
+                                <select class="form-select" name="room_type" required>
+                                    <option selected disabled>Select Room</option>
+                                    <option value="Studio Executive suite">Studio Executive suite</option>
+                                    <option value="One Bedroom suite">One Bedroom suite</option>
+                                    <option value="Two Bedroom suite">Two Bedroom suite</option>
+                                    <option value="4 Bedroom suite">4 Bedroom Villa/Stand Alone</option>
+                                </select>
+                            </div>
                             <!-- Special Request -->
                             <div class="col-md-6">
                                 <textarea class="form-control" name="message" placeholder="Special Request" rows="2"></textarea>
@@ -285,61 +288,48 @@
         </form>
     </div>
 </div>
-
-      <style>
-        .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-      </style>
-
  <!--Booking End -->
 
-       <!-- Testimonial Start -->
-<div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="owl-carousel testimonial-carousel py-5">
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                <p>"The service was absolutely amazing! From the moment I arrived, the staff made me feel right at home. The room was pristine, and the amenities exceeded my expectations. A truly luxurious experience!"</p>
-                <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
-                    <div class="ps-3">
-                        <h6 class="fw-bold mb-1">Kimutai N'getich</h6>
-                        <small>Business Executive</small>
-                    </div>
-                </div>
-                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                <p>"I had the best dining experience at the hotel restaurant! The variety of cuisines and the quality of food was exceptional. The service was impeccable, and I can't wait to visit again."</p>
-                <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
-                    <div class="ps-3">
-                        <h6 class="fw-bold mb-1">Sarah Johnson</h6>
-                        <small>Chef & Food Blogger</small>
-                    </div>
-                </div>
-                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                <p>"The spa and fitness center were a highlight of my stay. I felt completely rejuvenated after a relaxing massage, and the fitness center had all the equipment I needed. Truly top-notch facilities!"</p>
-                <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
-                    <div class="ps-3">
-                        <h6 class="fw-bold mb-1">Emily Maina</h6>
-                        <small>Yoga Instructor</small>
-                    </div>
-                </div>
-                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-        </div>
+<!-- Testimonial Start -->
+<div class="container-xxl testimonial my-5 py-5 wow fadeInUp" data-wow-delay="0.2s">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h6 class="section-title text-gold text-uppercase">Client Testimonials</h6>
+      <h1 class="display-6 fw-bold">What Our Guests Say</h1>
     </div>
+
+    <div class="owl-carousel testimonial-carousel">
+      <!-- Testimonial Item -->
+      <div class="testimonial-item bg-white rounded-4 shadow-sm p-4 text-center position-relative">
+        <i class="fa fa-quote-left fa-2x text-gold mb-3"></i>
+        <p class="fs-6 fst-italic text-dark">
+          "The service was absolutely amazing! From the moment I arrived, the staff made me feel right at home. The room was pristine, and the amenities exceeded my expectations. A truly luxurious experience!"
+        </p>
+        <h6 class="fw-bold text-gold mt-3">Kimutai N'getich</h6>
+        <small class="text-muted">Business Executive</small>
+      </div>
+
+      <!-- Testimonial Item -->
+      <div class="testimonial-item bg-white rounded-4 shadow-sm p-4 text-center position-relative">
+        <i class="fa fa-quote-left fa-2x text-gold mb-3"></i>
+        <p class="fs-6 fst-italic text-dark">
+          "I had the best dining experience at the hotel restaurant! The variety of cuisines and the quality of food was exceptional. The service was impeccable, and I can't wait to visit again."
+        </p>
+        <h6 class="fw-bold text-gold mt-3">Sarah Johnson</h6>
+        <small class="text-muted">Chef & Food Blogger</small>
+      </div>
+
+      <!-- Testimonial Item -->
+      <div class="testimonial-item bg-white rounded-4 shadow-sm p-4 text-center position-relative">
+        <i class="fa fa-quote-left fa-2x text-gold mb-3"></i>
+        <p class="fs-6 fst-italic text-dark">
+          "The spa and fitness center were a highlight of my stay. I felt completely rejuvenated after a relaxing massage, and the fitness center had all the equipment I needed. Truly top-notch facilities!"
+        </p>
+        <h6 class="fw-bold text-gold mt-3">Emily Maina</h6>
+        <small class="text-muted">Yoga Instructor</small>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Testimonial End -->
 
@@ -350,7 +340,7 @@
       
       <!-- Logo and About -->
       <div class="col-md-6 col-lg-4">
-        <a href="index">
+        <a href="/">
           <img src="img/logo.jpg" alt="Polarhomes Logo" class="img-fluid mb-3" style="max-width: 140px; border-radius: 12px;">
         </a>
         <p class="mb-3 text-muted" style="font-size: 0.95rem; line-height: 1.7;">
@@ -411,7 +401,7 @@
         Designed by <a class="text-decoration-none text-dark fw-semibold" href="https://antocapteknologies.com">Antocap Teknologies</a>
       </div>
       <div class="col-md-6 text-center text-md-end small">
-        <a class="text-dark me-3 text-decoration-none" href="index">Home</a>
+        <a class="text-dark me-3 text-decoration-none" href="/">Home</a>
         <a class="text-dark text-decoration-none" href="contact">Help</a>
       </div>
     </div>

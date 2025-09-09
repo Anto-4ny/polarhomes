@@ -177,7 +177,7 @@ This suite is ideal for both work and leisure, offering complimentary ultra-fast
     "img/room-4bed19.jpg"
   ]
 }
-  };
+};
 
   // If invalid room or no data
   if (!room || !roomData[room]) {

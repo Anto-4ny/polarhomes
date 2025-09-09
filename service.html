@@ -110,7 +110,7 @@
 <header>
   <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 px-lg-5 sticky-navbar">
-  <a href="index" class="navbar-brand d-flex align-items-center">
+  <a href="/" class="navbar-brand d-flex align-items-center">
     <img src="img/logo.jpg" alt="Polarhomes Luxury Homes Logo" class="logo-img me-2" />
     <h1 class="m-0 fancy-text">Polarhomes</h1>
   </a>
@@ -123,7 +123,7 @@
   <!-- Navbar Links -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
     <ul class="navbar-nav ms-auto text-uppercase fw-semibold">
-      <li class="nav-item"><a href="index" class="nav-link active">Home</a></li>
+      <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
       <li class="nav-item"><a href="about" class="nav-link">About Us</a></li>
       <li class="nav-item"><a href="service" class="nav-link">Our Services</a></li>
       <li class="nav-item"><a href="room" class="nav-link">Our Rooms</a></li>
@@ -310,10 +310,10 @@
   document.getElementById("explore-btn").addEventListener("click", function() {
     var moreServices = document.getElementById("more-services");
     if (moreServices.style.display === "none") {
-      moreServices.style.display = "flex"; // show as flex grid
+      moreServices.style.display = "flex"; 
       this.textContent = "Show Less";
     } else {
-      moreServices.style.display = "none"; // hide again
+      moreServices.style.display = "none"; 
       this.textContent = "Explore More Services";
     }
   });
@@ -448,7 +448,7 @@
       
       <!-- Logo and About -->
       <div class="col-md-6 col-lg-4">
-        <a href="index">
+        <a href="/">
           <img src="img/logo.jpg" alt="Polarhomes Logo" class="img-fluid mb-3" style="max-width: 140px; border-radius: 12px;">
         </a>
         <p class="mb-3 text-muted" style="font-size: 0.95rem; line-height: 1.7;">
@@ -509,7 +509,7 @@
         Designed by <a class="text-decoration-none text-dark fw-semibold" href="https://antocapteknologies.com">Antocap Teknologies</a>
       </div>
       <div class="col-md-6 text-center text-md-end small">
-        <a class="text-dark me-3 text-decoration-none" href="index">Home</a>
+        <a class="text-dark me-3 text-decoration-none" href="/">Home</a>
         <a class="text-dark text-decoration-none" href="contact">Help</a>
       </div>
     </div>

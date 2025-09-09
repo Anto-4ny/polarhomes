@@ -103,7 +103,7 @@
 <header>
   <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 px-lg-5 sticky-navbar">
-  <a href="index" class="navbar-brand d-flex align-items-center">
+  <a href="/" class="navbar-brand d-flex align-items-center">
     <img src="img/logo.jpg" alt="Polarhomes Luxury Homes Logo" class="logo-img me-2" />
     <h1 class="m-0 fancy-text">Polarhomes</h1>
   </a>
@@ -116,7 +116,7 @@
   <!-- Navbar Links -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
     <ul class="navbar-nav ms-auto text-uppercase fw-semibold">
-      <li class="nav-item"><a href="index" class="nav-link active">Home</a></li>
+      <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
       <li class="nav-item"><a href="about" class="nav-link">About Us</a></li>
       <li class="nav-item"><a href="service" class="nav-link">Our Services</a></li>
       <li class="nav-item"><a href="room" class="nav-link">Our Rooms</a></li>
@@ -203,84 +203,6 @@
         }
     }
 </style>
-
-<!-- Booking Start -->
-<div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container">
-        <form action="https://formspree.io/f/xkgryeaa" method="POST">
-            <div class="bg-white shadow" style="padding: 35px;">
-                <div class="row g-2">
-                    <!-- Date, Guests -->
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <!-- Check In -->
-                            <div class="col-md-3">
-                                <div class="date" id="date1" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input"
-                                        name="checkin"
-                                        placeholder="Check In" data-target="#date1" data-toggle="datetimepicker" required />
-                                </div>
-                            </div>
-                            <!-- Check Out -->
-                            <div class="col-md-3">
-                                <div class="date" id="date2" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input"
-                                        name="checkout"
-                                        placeholder="Check Out" data-target="#date2" data-toggle="datetimepicker" required />
-                                </div>
-                            </div>
-                            <!-- Adults -->
-                            <div class="col-md-3">
-                                <select class="form-select" name="adults" required>
-                                    <option selected disabled>Adult</option>
-                                    <option value="1">1 Person</option>
-                                    <option value="2">2 People</option>
-                                </select>
-                            </div>
-                            <!-- Children -->
-                            <div class="col-md-3">
-                                <select class="form-select" name="children">
-                                    <option selected disabled>Child</option>
-                                    <option value="0">No Child</option>
-                                    <option value="1">1 Child</option>
-                                    <option value="2">2 Children</option>
-                                </select>
-                            </div>
-                            <!-- Email -->
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required />
-                            </div>
-                            <!-- Phone -->
-                            <div class="col-md-6">
-                                <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required />
-                            </div>
-                            <!-- Room Type -->
-                            <div class="col-md-6">
-                                <select class="form-select" name="room_type" required>
-                                    <option selected disabled>Select Room</option>
-                                    <option value="Studio Executive suite">Studio Executive suite</option>
-                                    <option value="One Bedroom suite">One Bedroom suite</option>
-                                    <option value="Two Bedroom suite">Two Bedroom suite</option>
-                                    <option value="4 Bedroom suite">4 Bedroom Villa/Stand Alone</option>
-                                </select>
-                            </div>
-                            <!-- Special Request -->
-                            <div class="col-md-6">
-                                <textarea class="form-control" name="message" placeholder="Special Request" rows="2"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit Button -->
-                    <div class="col-md-2">
-                        <button class="btn btn-primary w-100 h-100" type="submit">Book Now</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-
- <!--Booking End -->
 
 <!-- Room Start -->
 <div class="container-xxl py-5">
@@ -386,7 +308,7 @@
     </div>
 </div>
 
-            <!-- 4 Bedroom -->
+        <!-- 4 Bedroom -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="room-item shadow rounded overflow-hidden">
                     <div class="position-relative">
@@ -429,6 +351,84 @@
     object-fit: cover; 
 }
 </style>
+
+<!-- Booking Start -->
+<div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <form action="https://formspree.io/f/xkgryeaa" method="POST">
+            <div class="bg-white shadow" style="padding: 35px;">
+                <div class="row g-2">
+                    <!-- Date, Guests -->
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <!-- Check In -->
+                            <div class="col-md-3">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        name="checkin"
+                                        placeholder="Check In" data-target="#date1" data-toggle="datetimepicker" required />
+                                </div>
+                            </div>
+                            <!-- Check Out -->
+                            <div class="col-md-3">
+                                <div class="date" id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        name="checkout"
+                                        placeholder="Check Out" data-target="#date2" data-toggle="datetimepicker" required />
+                                </div>
+                            </div>
+                            <!-- Adults -->
+                            <div class="col-md-3">
+                                <select class="form-select" name="adults" required>
+                                    <option selected disabled>Adult</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                </select>
+                            </div>
+                            <!-- Children -->
+                            <div class="col-md-3">
+                                <select class="form-select" name="children">
+                                    <option selected disabled>Child</option>
+                                    <option value="0">No Child</option>
+                                    <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
+                                </select>
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required />
+                            </div>
+                            <!-- Phone -->
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required />
+                            </div>
+                            <!-- Room Type -->
+                            <div class="col-md-6">
+                                <select class="form-select" name="room_type" required>
+                                    <option selected disabled>Select Room</option>
+                                    <option value="Studio Executive suite">Studio Executive suite</option>
+                                    <option value="One Bedroom suite">One Bedroom suite</option>
+                                    <option value="Two Bedroom suite">Two Bedroom suite</option>
+                                    <option value="4 Bedroom suite">4 Bedroom Villa/Stand Alone</option>
+                                </select>
+                            </div>
+                            <!-- Special Request -->
+                            <div class="col-md-6">
+                                <textarea class="form-control" name="message" placeholder="Special Request" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="col-md-2">
+                        <button class="btn btn-primary w-100 h-100" type="submit">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+ <!--Booking End -->
 
 <!-- Testimonial Start -->
 <div class="container-xxl testimonial my-5 py-5 wow fadeInUp" data-wow-delay="0.2s">
@@ -480,7 +480,7 @@
       
       <!-- Logo and About -->
       <div class="col-md-6 col-lg-4">
-        <a href="index">
+        <a href="/">
           <img src="img/logo.jpg" alt="Polarhomes Logo" class="img-fluid mb-3" style="max-width: 140px; border-radius: 12px;">
         </a>
         <p class="mb-3 text-muted" style="font-size: 0.95rem; line-height: 1.7;">
@@ -541,7 +541,7 @@
         Designed by <a class="text-decoration-none text-dark fw-semibold" href="https://antocapteknologies.com">Antocap Teknologies</a>
       </div>
       <div class="col-md-6 text-center text-md-end small">
-        <a class="text-dark me-3 text-decoration-none" href="index">Home</a>
+        <a class="text-dark me-3 text-decoration-none" href="/">Home</a>
         <a class="text-dark text-decoration-none" href="contact">Help</a>
       </div>
     </div>
